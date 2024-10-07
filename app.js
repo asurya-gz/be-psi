@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://katakitamah.up.railway.app/", // Ganti dengan domain frontend Anda
+    origin: "https://katakitamah.up.railway.app", // Tanpa trailing slash
     credentials: true, // Jika perlu
   })
 );
