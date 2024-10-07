@@ -12,8 +12,12 @@ const PORT = 4000;
 // Middleware untuk mengurai JSON
 app.use(express.json());
 
-// Mengaktifkan CORS
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://katakitamah.up.railway.app/", // Ganti dengan domain frontend Anda
+    credentials: true, // Jika perlu
+  })
+);
 
 // Menggunakan routes
 app.use("/users", userRoutes);
