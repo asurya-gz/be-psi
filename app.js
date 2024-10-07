@@ -7,7 +7,7 @@ const webPush = require("web-push");
 const userAffirmationRoutes = require("./routes/userAffirmationRoutes");
 
 const app = express();
-const PORT = process.env.PORT || 4000;
+const PORT = 4000;
 
 // Middleware untuk mengurai JSON
 app.use(express.json());
